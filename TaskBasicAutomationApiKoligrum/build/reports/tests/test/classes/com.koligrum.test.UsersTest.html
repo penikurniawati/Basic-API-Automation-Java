@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.koligrum.test.UsersTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.koligrum.test.UsersTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.koligrum.test.html">com.koligrum.test</a> &gt; UsersTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.275s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">User</td>
+<td class="success">4.275s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>==== Create User ====
+Request method:	POST
+Request URI:	http://localhost:1234/v1/users
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;firstName&quot;: &quot;Peni&quot;,
+    &quot;lastName&quot;: &quot;Kurniawati&quot;,
+    &quot;age&quot;: 23,
+    &quot;occupation&quot;: &quot;Quality Assurance&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;
+}
+{
+    &quot;id&quot;: &quot;37c4de8c-e8b1-4159-ad6a-389285181261&quot;,
+    &quot;firstName&quot;: &quot;Peni&quot;,
+    &quot;lastName&quot;: &quot;Kurniawati&quot;,
+    &quot;age&quot;: 23,
+    &quot;occupation&quot;: &quot;Quality Assurance&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;,
+    &quot;createdDate&quot;: &quot;2021-09-20T10:07:32.44&quot;,
+    &quot;updatedDate&quot;: null
+}
+===== Verify user successfully created by ID ====
+Response API saat create user yaitu : 200
+===== Verify user successfully created using json path ====
+Request method:	GET
+Request URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+Headers:		accept=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+{
+    &quot;id&quot;: &quot;37c4de8c-e8b1-4159-ad6a-389285181261&quot;,
+    &quot;firstName&quot;: &quot;Peni&quot;,
+    &quot;lastName&quot;: &quot;Kurniawati&quot;,
+    &quot;age&quot;: 23,
+    &quot;occupation&quot;: &quot;Quality Assurance&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;,
+    &quot;createdDate&quot;: &quot;2021-09-20T10:07:32.44&quot;,
+    &quot;updatedDate&quot;: null
+}
+==== Update User ====
+Request method:	PUT
+Request URI:	http://localhost:1234/v1/users
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;id&quot;: &quot;37c4de8c-e8b1-4159-ad6a-389285181261&quot;,
+    &quot;firstName&quot;: &quot;Kurnia&quot;,
+    &quot;lastName&quot;: &quot;Koligrum&quot;,
+    &quot;age&quot;: 22,
+    &quot;occupation&quot;: &quot;Quality Assurance Engineer&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;
+}
+{
+    &quot;id&quot;: &quot;37c4de8c-e8b1-4159-ad6a-389285181261&quot;,
+    &quot;firstName&quot;: &quot;Kurnia&quot;,
+    &quot;lastName&quot;: &quot;Koligrum&quot;,
+    &quot;age&quot;: 22,
+    &quot;occupation&quot;: &quot;Quality Assurance Engineer&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;,
+    &quot;createdDate&quot;: &quot;2021-09-20T10:07:32.44&quot;,
+    &quot;updatedDate&quot;: &quot;2021-09-20T10:07:33.802&quot;
+}
+==== Verify user successfully update by id ====
+Request method:	GET
+Request URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+Headers:		accept=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+==== Verify user successfully update from JSON path ====
+{
+    &quot;id&quot;: &quot;37c4de8c-e8b1-4159-ad6a-389285181261&quot;,
+    &quot;firstName&quot;: &quot;Kurnia&quot;,
+    &quot;lastName&quot;: &quot;Koligrum&quot;,
+    &quot;age&quot;: 22,
+    &quot;occupation&quot;: &quot;Quality Assurance Engineer&quot;,
+    &quot;nationality&quot;: &quot;Indonesia&quot;,
+    &quot;hobbies&quot;: [
+        &quot;Cooking&quot;
+    ],
+    &quot;gender&quot;: &quot;FEMALE&quot;,
+    &quot;createdDate&quot;: &quot;2021-09-20T10:07:32.44&quot;,
+    &quot;updatedDate&quot;: &quot;2021-09-20T10:07:33.802&quot;
+}
+=== Delete User ====
+Request method:	DELETE
+Request URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+Headers:		accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+==== Verify user successfully deleted by id ====
+Request method:	DELETE
+Request URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+Headers:		accept=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+{
+    &quot;errorCode&quot;: &quot;ER-01&quot;,
+    &quot;statusCode&quot;: 404,
+    &quot;message&quot;: &quot;user not found&quot;,
+    &quot;timestamp&quot;: &quot;2021-09-20T10:07:34.081&quot;
+}
+=== Verify data after deleted ====
+Message setelah didelete yaitu : user not found
+Response API saat data sudah didelete yaitu :404
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at Sep 20, 2021 10:07:34 AM</p>
+</div>
+</div>
+</body>
+</html>

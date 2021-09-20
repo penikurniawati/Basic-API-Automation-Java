@@ -1,0 +1,165 @@
+==== Create User ====
+Request method:	POST
+-Request URI:	http://localhost:1234/v1/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+#Headers:		accept=application/json
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Peni",
+    "lastName": "Kurniawati",
+    "age": 23,
+'    "occupation": "Quality Assurance",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE"
+}
+{
+2    "id": "37c4de8c-e8b1-4159-ad6a-389285181261",
+    "firstName": "Peni",
+    "lastName": "Kurniawati",
+    "age": 23,
+'    "occupation": "Quality Assurance",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE",
+-    "createdDate": "2021-09-20T10:07:32.44",
+    "updatedDate": null
+}
+3===== Verify user successfully created by ID ====
++Response API saat create user yaitu : 200
+====== Verify user successfully created using json path ====
+Request method:	GET
+RRequest URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+6Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+#Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+2    "id": "37c4de8c-e8b1-4159-ad6a-389285181261",
+    "firstName": "Peni",
+    "lastName": "Kurniawati",
+    "age": 23,
+'    "occupation": "Quality Assurance",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE",
+-    "createdDate": "2021-09-20T10:07:32.44",
+    "updatedDate": null
+}
+==== Update User ====
+Request method:	PUT
+-Request URI:	http://localhost:1234/v1/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+#Headers:		accept=application/json
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+2    "id": "37c4de8c-e8b1-4159-ad6a-389285181261",
+    "firstName": "Kurnia",
+    "lastName": "Koligrum",
+    "age": 22,
+0    "occupation": "Quality Assurance Engineer",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE"
+}
+{
+2    "id": "37c4de8c-e8b1-4159-ad6a-389285181261",
+    "firstName": "Kurnia",
+    "lastName": "Koligrum",
+    "age": 22,
+0    "occupation": "Quality Assurance Engineer",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE",
+-    "createdDate": "2021-09-20T10:07:32.44",
+-    "updatedDate": "2021-09-20T10:07:33.802"
+}
+1==== Verify user successfully update by id ====
+Request method:	GET
+RRequest URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+6Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+#Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+:==== Verify user successfully update from JSON path ====
+{
+2    "id": "37c4de8c-e8b1-4159-ad6a-389285181261",
+    "firstName": "Kurnia",
+    "lastName": "Koligrum",
+    "age": 22,
+0    "occupation": "Quality Assurance Engineer",
+     "nationality": "Indonesia",
+    "hobbies": [
+        "Cooking"
+    ],
+    "gender": "FEMALE",
+-    "createdDate": "2021-09-20T10:07:32.44",
+-    "updatedDate": "2021-09-20T10:07:33.802"
+}
+=== Delete User ====
+Request method:	DELETE
+RRequest URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+6Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+Headers:		accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2==== Verify user successfully deleted by id ====
+Request method:	DELETE
+RRequest URI:	http://localhost:1234/v1/users/37c4de8c-e8b1-4159-ad6a-389285181261
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+6Path params:	id=37c4de8c-e8b1-4159-ad6a-389285181261
+#Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "errorCode": "ER-01",
+    "statusCode": 404,
+!    "message": "user not found",
++    "timestamp": "2021-09-20T10:07:34.081"
+}
+$=== Verify data after deleted ====
+1Message setelah didelete yaitu : user not found
+2Response API saat data sudah didelete yaitu :404
